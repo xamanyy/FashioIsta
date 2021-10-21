@@ -30,7 +30,6 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
 
 
-
 public class LoginPage extends AppCompatActivity  {
 
     private static final int RC_SIGN_IN = 101;
@@ -84,12 +83,10 @@ public class LoginPage extends AppCompatActivity  {
 
     }
 
-
-
-
     //Configure google sign in Method
     private void signInWithGoogle() {
-        GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+        GoogleSignInOptions gso = new GoogleSignInOptions
+                .Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestIdToken(getString(R.string.default_web_client_id))
                 .requestEmail()
                 .build();
