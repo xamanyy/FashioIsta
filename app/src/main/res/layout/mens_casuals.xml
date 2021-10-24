@@ -7,23 +7,24 @@
 
     <ImageView
         android:id="@+id/imageView8"
-        android:layout_width="358dp"
-        android:layout_height="231dp"
+        android:layout_width="360dp"
+        android:layout_height="230dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.24"
+        app:layout_constraintVertical_bias="0.200"
         app:srcCompat="@drawable/mens_casuals_top" />
 
     <ImageView
         android:id="@+id/imageView9"
-        android:layout_width="355dp"
-        android:layout_height="212dp"
+        android:layout_width="360dp"
+        android:layout_height="230dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView8"
+        app:layout_constraintVertical_bias="0.500"
         app:srcCompat="@drawable/mens_casuals_bottom" />
 </androidx.constraintlayout.widget.ConstraintLayout>

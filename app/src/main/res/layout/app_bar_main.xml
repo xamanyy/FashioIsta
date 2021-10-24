@@ -32,5 +32,4 @@
         app:srcCompat="@drawable/ic_menu_camera" />
 
 
-
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
