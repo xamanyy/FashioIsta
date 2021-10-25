@@ -27,7 +27,6 @@ public class mens extends AppCompatActivity {
         binding = ActivityMensBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        setSupportActionBar(binding.toolbar);
 
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_mens);
         appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).build();

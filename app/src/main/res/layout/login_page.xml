@@ -9,9 +9,13 @@
 
     <Button
         android:id="@+id/google"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Login"
+        android:layout_width="376dp"
+        android:layout_height="64dp"
+        android:text="Sign in with Google"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
