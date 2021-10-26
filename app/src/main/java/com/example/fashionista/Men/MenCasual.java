@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -15,14 +14,21 @@ public class MenCasual extends AppCompatActivity {
     private ImageView top;
     private ImageView bottom;
 
-    TextView tt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.mens_casuals);
 
-        top = (ImageView) findViewById(R.id.men_formal);
-        bottom = (ImageView) findViewById(R.id.men_casual);
+        top = (ImageView) findViewById(R.id.top);
+        bottom = (ImageView) findViewById(R.id.bottom);
+
+        top.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                startActivity(new Intent(MenCasual.this, MenTopCasualActivity.class));
+            }
+        });
     }
 }

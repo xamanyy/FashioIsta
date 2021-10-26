@@ -28,12 +28,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
-        android:layout_marginLeft="@dimen/fab_margin"
-        android:layout_marginRight="@dimen/fab_margin"
-        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="@dimen/fab_margin"
         android:backgroundTint="@color/splash_bg"
-        app:srcCompat="@drawable/ic_camera"
-        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,VectorDrawableCompat" />
+        android:layout_marginBottom="16dp"
+        app:srcCompat="@drawable/ic_menu_camera" />
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

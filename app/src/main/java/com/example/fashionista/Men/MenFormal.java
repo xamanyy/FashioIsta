@@ -19,13 +19,13 @@ public class MenFormal extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.mens_formals);
 
-        top = (ImageView) findViewById(R.id.men_formal);
-        bottom = (ImageView) findViewById(R.id.men_casual);
+        top = (ImageView) findViewById(R.id.top);
+        bottom = (ImageView) findViewById(R.id.bottom);
 
 //        top.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View view) {
-//                startActivity(new Intent(MenCloth.this, MenFormal.class));
+//                startActivity(new Intent(MenFormal.this, MenTopFormalActivity.class));
 //            }
 //        });
 

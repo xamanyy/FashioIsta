@@ -28,4 +28,5 @@
         app:layout_constraintTop_toBottomOf="@+id/top"
         app:layout_constraintVertical_bias="0.500"
         app:srcCompat="@drawable/mens_formals_bottom" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
