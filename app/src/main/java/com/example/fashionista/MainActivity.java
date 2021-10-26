@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
             public void run() {
                 //Write whatever to want to do after delay specified (1 sec)
                 startActivity(new Intent(MainActivity.this, Home.class));
-                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
+//                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                 finish();
             }
         }, 3000);
