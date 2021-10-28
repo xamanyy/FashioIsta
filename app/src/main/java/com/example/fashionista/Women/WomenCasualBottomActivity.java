@@ -5,27 +5,29 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 
+import com.example.fashionista.Men.Items;
+import com.example.fashionista.Men.MenAdapter;
 import com.example.fashionista.R;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class WomenCasualBottomActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
-    WomenAdapter adapter;
+    MenAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_women_casual_bottom);
+        setContentView(R.layout.activity_men_top_formal);
 
-        recyclerView = findViewById(R.id.recylerView);
+        recyclerView = findViewById(R.id.rv);
 
-        FirebaseRecyclerOptions<WomenItems> options =
-                new FirebaseRecyclerOptions.Builder<WomenItems>()
-                        .setQuery(FirebaseDatabase.getInstance().getReference().child("WomenCasualBottom"), WomenItems.class )
+        FirebaseRecyclerOptions<Items> options =
+                new FirebaseRecyclerOptions.Builder<Items>()
+                        .setQuery(FirebaseDatabase.getInstance().getReference().child("WomenCasualBottom"), Items.class )
                         .build();
 
-        adapter = new WomenAdapter(options);
+        adapter = new MenAdapter(options);
         recyclerView.setAdapter(adapter);
     }
 

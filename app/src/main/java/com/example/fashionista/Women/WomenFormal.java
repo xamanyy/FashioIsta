@@ -16,15 +16,14 @@ public class WomenFormal extends AppCompatActivity {
     private ImageView top;
     private ImageView bottom;
 
-    TextView tt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.womens_formals);
 
-        top = (ImageView) findViewById(R.id.top);
-        bottom = (ImageView) findViewById(R.id.bottom);
+        top = (ImageView) findViewById(R.id.top2);
+        bottom = (ImageView) findViewById(R.id.bottom2);
 
         top.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -33,12 +32,12 @@ public class WomenFormal extends AppCompatActivity {
             }
         });
 
-//        bottom.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                startActivity(new Intent(WomenFormal.this, WomenFormalTopActivity.class));
-//            }
-//        });
+        bottom.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(WomenFormal.this, WomenFormalBottomActivity.class));
+            }
+        });
 
     }
 }
