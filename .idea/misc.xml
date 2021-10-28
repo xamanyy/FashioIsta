@@ -3,6 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android Studio Projects/Minor Projects/FashioIsta/app/src/main/res/layout/activity_women_casual_top.xml" value="0.25416666666666665" />
+        <entry key="..\:/Android Studio Projects/Minor Projects/FashioIsta/app/src/main/res/layout/activity_women_formal_bottom.xml" value="0.2368659420289855" />
+        <entry key="..\:/Android Studio Projects/Minor Projects/FashioIsta/app/src/main/res/layout/activity_women_formal_top.xml" value="0.2368659420289855" />
+        <entry key="..\:/Android Studio Projects/Minor Projects/FashioIsta/app/src/main/res/layout/each_item.xml" value="0.2368659420289855" />
+        <entry key="..\:/Android Studio Projects/Minor Projects/FashioIsta/app/src/main/res/layout/mens_casuals.xml" value="0.2368659420289855" />
+        <entry key="..\:/Android Studio Projects/Minor Projects/FashioIsta/app/src/main/res/layout/mens_formals.xml" value="0.25416666666666665" />
+        <entry key="..\:/Android Studio Projects/Minor Projects/FashioIsta/app/src/main/res/layout/womens.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/Fashionista/app/src/main/res/drawable-v21/ic_menu_camera.xml" value="0.10925925925925926" />
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/Fashionista/app/src/main/res/drawable-v21/ic_menu_gallery.xml" value="0.2462962962962963" />
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/Fashionista/app/src/main/res/drawable-v21/ic_menu_slideshow.xml" value="0.2462962962962963" />

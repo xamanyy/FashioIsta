@@ -21,7 +21,7 @@ public class WomenCloth extends AppCompatActivity {
     private ImageView formal;
     private ImageView casual;
 
-    TextView tt;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

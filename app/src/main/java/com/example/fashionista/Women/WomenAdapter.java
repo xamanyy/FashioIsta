@@ -1,4 +1,4 @@
-package com.example.fashionista.Men;
+package com.example.fashionista.Women;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,24 +11,20 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.example.fashionista.R;
+import com.example.fashionista.databinding.EachItemBinding;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 
-public class MenAdapter extends FirebaseRecyclerAdapter<
-        Items, MenAdapter.MenViewholder> {
+public class WomenAdapter extends FirebaseRecyclerAdapter<WomenItems, WomenAdapter.WomenViewHolder> {
 
-    public MenAdapter(@NonNull FirebaseRecyclerOptions<Items> options)
-    {
+
+    public WomenAdapter(@NonNull FirebaseRecyclerOptions<WomenItems> options) {
         super(options);
     }
 
-
     @Override
-    protected void onBindViewHolder(@NonNull MenViewholder holder, int position, @NonNull Items model)
-    {
-
+    protected void onBindViewHolder(@NonNull WomenViewHolder holder, int position, @NonNull WomenItems model) {
         holder.name.setText(model.getItemName());
-
         holder.stock.setText(model.getStock());
         holder.rating.setText(model.getRating());
         Glide.with(holder.img.getContext()).load(model.getImageUrl()).into(holder.img);
@@ -36,24 +32,22 @@ public class MenAdapter extends FirebaseRecyclerAdapter<
 
     @NonNull
     @Override
-    public MenViewholder onCreateViewHolder(@NonNull ViewGroup parent,int viewType)
-    {
+    public WomenViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.each_item, parent, false);
-        return new MenViewholder(view);
+        return new WomenViewHolder(view);
     }
 
+    public class WomenViewHolder extends RecyclerView.ViewHolder {
 
-    class MenViewholder extends RecyclerView.ViewHolder {
         TextView name, stock, rating;
         ImageView img;
-        public MenViewholder(@NonNull View itemView)
-        {
+        public WomenViewHolder(@NonNull View itemView) {
             super(itemView);
-
-            img = (ImageView) itemView.findViewById(R.id.img);
-            name = (TextView) itemView.findViewById(R.id.name);
-            stock = (TextView) itemView.findViewById(R.id.stock);
-            rating = (TextView) itemView.findViewById(R.id.rating);
+            name = itemView.findViewById(R.id.name);
+            stock = itemView.findViewById(R.id.stock);
+            img = itemView.findViewById(R.id.img);
+            rating = itemView.findViewById(R.id.rating);
         }
     }
 }
+
