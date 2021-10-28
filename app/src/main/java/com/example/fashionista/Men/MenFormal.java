@@ -1,6 +1,8 @@
 package com.example.fashionista.Men;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -36,6 +38,19 @@ public class MenFormal extends AppCompatActivity {
 //            }
 //        });
 
+        top.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MenFormal.this, MenFormalTopActivity.class));
+            }
+        });
+
+        bottom.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MenFormal.this, MenFormalBottomActivity.class));
+            }
+        });
     }
 }
 

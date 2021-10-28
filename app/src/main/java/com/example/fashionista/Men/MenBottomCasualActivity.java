@@ -1,23 +1,22 @@
 package com.example.fashionista.Men;
 
-import android.os.Bundle;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import android.os.Bundle;
 
 import com.example.fashionista.R;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.database.FirebaseDatabase;
 
-public class MenTopCasualActivity extends AppCompatActivity {
+public class MenBottomCasualActivity extends AppCompatActivity {
 
     private RecyclerView recyclerView;
     MenAdapter adapter;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState)
-    {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_men_top_formal);
 
@@ -27,13 +26,14 @@ public class MenTopCasualActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
 
-        FirebaseRecyclerOptions<Items> options
-                = new FirebaseRecyclerOptions.Builder<Items>()
-                .setQuery(FirebaseDatabase.getInstance().getReference().child("MenCasualTop"), Items.class)
+        FirebaseRecyclerOptions<Items> options =
+                new  FirebaseRecyclerOptions.Builder<Items>()
+                .setQuery(FirebaseDatabase.getInstance().getReference().child("MenCasualBottom"), Items.class)
                 .build();
 
         adapter = new MenAdapter(options);
         recyclerView.setAdapter(adapter);
+
     }
 
     @Override protected void onStart()

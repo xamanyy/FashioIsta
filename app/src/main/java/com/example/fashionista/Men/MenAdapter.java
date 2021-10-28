@@ -14,17 +14,17 @@ import com.example.fashionista.R;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 
-public class CasualTopItemAdapter extends FirebaseRecyclerAdapter<
-        CasualTopItem, CasualTopItemAdapter.myViewholder> {
+public class MenAdapter extends FirebaseRecyclerAdapter<
+        Items, MenAdapter.MenViewholder> {
 
-    public CasualTopItemAdapter(@NonNull FirebaseRecyclerOptions<CasualTopItem> options)
+    public MenAdapter(@NonNull FirebaseRecyclerOptions<Items> options)
     {
         super(options);
     }
 
 
     @Override
-    protected void onBindViewHolder(@NonNull myViewholder holder, int position, @NonNull CasualTopItem model)
+    protected void onBindViewHolder(@NonNull MenViewholder holder, int position, @NonNull Items model)
     {
 
         holder.name.setText(model.getItemName());
@@ -35,17 +35,17 @@ public class CasualTopItemAdapter extends FirebaseRecyclerAdapter<
 
     @NonNull
     @Override
-    public myViewholder onCreateViewHolder(@NonNull ViewGroup parent,int viewType)
+    public MenViewholder onCreateViewHolder(@NonNull ViewGroup parent,int viewType)
     {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.each_item, parent, false);
-        return new myViewholder(view);
+        return new MenViewholder(view);
     }
 
 
-    class myViewholder extends RecyclerView.ViewHolder {
+    class MenViewholder extends RecyclerView.ViewHolder {
         TextView name, stock;
         ImageView img;
-        public myViewholder(@NonNull View itemView)
+        public MenViewholder(@NonNull View itemView)
         {
             super(itemView);
 

@@ -1,14 +1,14 @@
 package com.example.fashionista.Men;
 
-public class CasualTopItem {
+public class Items {
 
     private String ImageUrl, ItemName, Stock;
 
-    CasualTopItem() {
+    Items() {
 
     }
 
-    public CasualTopItem(String imageUrl, String itemName, String stock) {
+    public Items(String imageUrl, String itemName, String stock) {
         ImageUrl = imageUrl;
         ItemName = itemName;
         Stock = stock;
@@ -38,4 +38,3 @@ public class CasualTopItem {
         Stock = stock;
     }
 }
-
