@@ -1,6 +1,7 @@
 package com.example.fashionista.Women;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
@@ -21,6 +22,8 @@ public class WomenCasualBottomActivity extends AppCompatActivity {
         setContentView(R.layout.activity_men_top_formal);
 
         recyclerView = findViewById(R.id.rv);
+
+        recyclerView.setLayoutManager(new GridLayoutManager(this,2));
 
         FirebaseRecyclerOptions<Items> options =
                 new FirebaseRecyclerOptions.Builder<Items>()

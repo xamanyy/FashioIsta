@@ -3,6 +3,7 @@ package com.example.fashionista.Men;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -24,7 +25,8 @@ public class MenTopCasualActivity extends AppCompatActivity {
         recyclerView = findViewById(R.id.rv);
 
 
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+
+        recyclerView.setLayoutManager(new GridLayoutManager(this,2));
 
 
         FirebaseRecyclerOptions<Items> options
