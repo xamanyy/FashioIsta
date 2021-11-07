@@ -4,6 +4,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -17,6 +18,8 @@ import com.firebase.ui.database.FirebaseRecyclerOptions;
 public class MenAdapter extends FirebaseRecyclerAdapter<
         Items, MenAdapter.MenViewholder> {
 
+
+
     public MenAdapter(@NonNull FirebaseRecyclerOptions<Items> options)
     {
         super(options);
@@ -27,11 +30,15 @@ public class MenAdapter extends FirebaseRecyclerAdapter<
     protected void onBindViewHolder(@NonNull MenViewholder holder, int position, @NonNull Items model)
     {
 
+
+
+
         holder.name.setText(model.getItemName());
 
         holder.stock.setText(model.getStock());
 //        holder.rating.setText(model.getRating());
         Glide.with(holder.img.getContext()).load(model.getImageUrl()).into(holder.img);
+
     }
 
     @NonNull
@@ -54,6 +61,7 @@ public class MenAdapter extends FirebaseRecyclerAdapter<
             name = (TextView) itemView.findViewById(R.id.name);
             stock = (TextView) itemView.findViewById(R.id.stock);
             rating = (TextView) itemView.findViewById(R.id.rating);
+
         }
     }
 }

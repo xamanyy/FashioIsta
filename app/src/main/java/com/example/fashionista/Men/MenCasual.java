@@ -15,6 +15,8 @@ public class MenCasual extends AppCompatActivity {
     private ImageView bottom;
 
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
