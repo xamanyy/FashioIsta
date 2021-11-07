@@ -4,13 +4,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.fashionista.Men.MenBottomCasualActivity;
-import com.example.fashionista.Men.MenCasual;
-import com.example.fashionista.Men.MenTopCasualActivity;
 import com.example.fashionista.R;
 
 public class WomenCasual extends AppCompatActivity {

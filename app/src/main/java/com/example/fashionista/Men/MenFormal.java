@@ -27,7 +27,7 @@ public class MenFormal extends AppCompatActivity {
         top.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MenFormal.this, MenFormalTopActivity.class));
+                startActivity(new Intent(MenFormal.this, MenTopFormal.class));
             }
         });
 

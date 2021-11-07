@@ -30,7 +30,7 @@ public class MenAdapter extends FirebaseRecyclerAdapter<
         holder.name.setText(model.getItemName());
 
         holder.stock.setText(model.getStock());
-        holder.rating.setText(model.getRating());
+//        holder.rating.setText(model.getRating());
         Glide.with(holder.img.getContext()).load(model.getImageUrl()).into(holder.img);
     }
 

@@ -46,18 +46,16 @@
         <activity android:name=".Men.MenCloth" />
         <activity android:name=".Men.MenFormal" />
         <activity android:name=".Men.MenCasual" />
-        <activity android:name=".Men.MenTopCasualActivity" />
         <activity android:name=".Men.MenBottomCasualActivity" />
-        <activity android:name=".Men.MenFormalTopActivity" />
         <activity android:name=".Men.MenFormalBottomActivity" />
+        <activity android:name=".Men.MenTopFormal" />
+        <activity android:name=".Men.MenTopCasual" />
 
-<!--        <activity android:name=".Women.WomenCasualBottomActivity" />-->
 
 
         <activity android:name=".Women.WomenCloth" />
         <activity android:name=".Women.WomenFormal" />
         <activity android:name=".Women.WomenCasual" />
-<!--        <activity android:name=".Women.WomenFormalTopActivity" />-->
 
 
 

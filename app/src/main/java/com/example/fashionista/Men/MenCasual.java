@@ -27,7 +27,7 @@ public class MenCasual extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                startActivity(new Intent(MenCasual.this, MenTopCasualActivity.class));
+                startActivity(new Intent(MenCasual.this, MenTopCasual.class));
             }
         });
 

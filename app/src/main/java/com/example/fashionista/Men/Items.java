@@ -2,8 +2,7 @@ package com.example.fashionista.Men;
 
 public class Items {
 
-    private String ImageUrl, ItemName, Stock, Rating;
-
+    private String ImageUrl, ItemName, Stock;
     Items() {
 
     }
@@ -12,7 +11,7 @@ public class Items {
         ImageUrl = imageUrl;
         ItemName = itemName;
         Stock = stock;
-        Rating = rating;
+//        Rating = rating;
     }
 
     public String getImageUrl() {
@@ -23,13 +22,13 @@ public class Items {
         ImageUrl = imageUrl;
     }
 
-    public String getRating() {
-        return Rating;
-    }
+//    public String getRating() {
+//        return Rating;
+//    }
 
-    public void setRating(String rating) {
-        Rating = rating;
-    }
+//    public void setRating(String rating) {
+//        Rating = rating;
+//    }
 
     public String getItemName() {
         return ItemName;
