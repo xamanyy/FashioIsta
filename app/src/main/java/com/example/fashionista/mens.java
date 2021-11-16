@@ -20,6 +20,8 @@ public class mens extends AppCompatActivity {
     private AppBarConfiguration appBarConfiguration;
     private ActivityMensBinding binding;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
