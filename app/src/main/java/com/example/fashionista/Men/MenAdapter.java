@@ -1,13 +1,22 @@
 package com.example.fashionista.Men;
 
+import static androidx.core.content.ContextCompat.createDeviceProtectedStorageContext;
+import static androidx.core.content.ContextCompat.startActivity;
+
+import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
@@ -30,14 +39,23 @@ public class MenAdapter extends FirebaseRecyclerAdapter<
     protected void onBindViewHolder(@NonNull MenViewholder holder, int position, @NonNull Items model)
     {
 
-
-
-
         holder.name.setText(model.getItemName());
 
-        holder.stock.setText(model.getStock());
+        holder.comp.setText(model.getCompany());
+
+//        holder.Url.setText(model.getUrl());
 //        holder.rating.setText(model.getRating());
         Glide.with(holder.img.getContext()).load(model.getImageUrl()).into(holder.img);
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+
+            public void onClick(View view) {
+                Context context = view.getContext();
+
+                context.startActivity(new Intent(Intent.ACTION_VIEW,Uri.parse("https://www.myntra.com/tshirts/roadster/roadster-men-navy-blue--maroon-striped-round-neck-t-shirt/10424682/buy")));
+            }
+        });
 
     }
 
@@ -51,7 +69,7 @@ public class MenAdapter extends FirebaseRecyclerAdapter<
 
 
     class MenViewholder extends RecyclerView.ViewHolder {
-        TextView name, stock, rating;
+        TextView name, comp;
         ImageView img;
         public MenViewholder(@NonNull View itemView)
         {
@@ -59,8 +77,9 @@ public class MenAdapter extends FirebaseRecyclerAdapter<
 
             img = (ImageView) itemView.findViewById(R.id.img);
             name = (TextView) itemView.findViewById(R.id.name);
-            stock = (TextView) itemView.findViewById(R.id.stock);
-            rating = (TextView) itemView.findViewById(R.id.rating);
+//            stock = (TextView) itemView.findViewById(R.id.stock);
+            comp = (TextView) itemView.findViewById(R.id.com);
+//            Url = (TextView) itemView.findViewById(R.id.url);
 
         }
     }
