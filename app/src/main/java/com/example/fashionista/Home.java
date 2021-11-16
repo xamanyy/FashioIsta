@@ -6,6 +6,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.Menu;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
@@ -87,6 +88,10 @@ public class Home extends AppCompatActivity  implements NavigationView.OnNavigat
                 logout();
                 break;
 
+            case R.id.about:
+//                 Toast.makeText(this,"Fuck",Toast.LENGTH_LONG).show();
+                       setContentView(R.layout.about);
+                 break;
 
         }
         return false;
